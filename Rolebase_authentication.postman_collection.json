@@ -1,0 +1,2451 @@
+{
+	"info": {
+		"_postman_id": "8c0a8b6e-330f-4b1e-8650-1e79cec4511e",
+		"name": "Rolebase_authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43188321"
+	},
+	"item": [
+		{
+			"name": "Role_base_api",
+			"item": [
+				{
+					"name": "registerAdmin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "c",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "c@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Admin",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/41kTx6eMvtL.jpg"
+								},
+								{
+									"key": "contactNo",
+									"value": "1234567890",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/registerAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"registerAdmin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "registerAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "c",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "c@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Admin",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/41kTx6eMvtL.jpg"
+										},
+										{
+											"key": "contactNo",
+											"value": "1234567890",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/registerAdmin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"registerAdmin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-ON9m46KGLPAM4GxxdutOW2fbPXk\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 04:15:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Register Admin\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "loginAdmin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "b@test.in",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/loginAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"loginAdmin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "b@test.in",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/loginAdmin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"loginAdmin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "209"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d1-nThnh31a6kTq26sEEyGEAzWA0ak\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 04:20:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login Admin Success\",\n    \"status\": 200,\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4\"\n}"
+						}
+					]
+				},
+				{
+					"name": "myProfile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "b@test.in",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/myProfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"myProfile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "myProfile",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "b@test.in",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/myProfile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"myProfile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "316"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13c-t4oPI/wWZyRn+Pf31n9/wk5wTNw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 04:21:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Profile Page\",\n    \"status\": 200,\n    \"data\": {\n        \"_id\": \"68edf918adcfbecc3b97c984\",\n        \"name\": \"bcd\",\n        \"email\": \"b@test.in\",\n        \"gender\": \"Female\",\n        \"role\": \"Admin\",\n        \"contactNo\": 1234567890,\n        \"isDelete\": true,\n        \"createdAt\": \"2025-10-14T07:17:44.148Z\",\n        \"updatedAt\": \"2025-10-14T09:34:02.896Z\",\n        \"profile\": \"/uploads/profile-1760433746386.png\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "editAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "bcd@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/713XBdb3P9L._SY879_.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/editAdmin?id=68edf918adcfbecc3b97c984",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"editAdmin"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68edf918adcfbecc3b97c984"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editAdmin",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "bcd@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/713XBdb3P9L._SY879_.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/editAdmin?id=68edf918adcfbecc3b97c984",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"editAdmin"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68edf918adcfbecc3b97c984"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "321"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"141-25RKpAPc3ScgQmTk4hzeptGTtfs\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 04:26:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Admin Edit Success\",\n    \"status\": 200,\n    \"data\": {\n        \"_id\": \"68edf918adcfbecc3b97c984\",\n        \"name\": \"bcd\",\n        \"email\": \"bcd@gmail.com\",\n        \"gender\": \"Female\",\n        \"role\": \"Admin\",\n        \"contactNo\": 1234567890,\n        \"isDelete\": true,\n        \"createdAt\": \"2025-10-14T07:17:44.148Z\",\n        \"updatedAt\": \"2025-10-15T04:26:46.347Z\",\n        \"profile\": \"/uploads/profile-1760502406321.jpg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteAdmin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/deleteAdmin?id=68edf918adcfbecc3b97c984",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"deleteAdmin"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68edf918adcfbecc3b97c984"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteAdmin",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/deleteAdmin?id=68edf918adcfbecc3b97c984",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"deleteAdmin"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68edf918adcfbecc3b97c984"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-oZuMzUvlnBBojEyw2wQ6nwR4BqQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 04:34:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Admin Delete Success\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "allAdmin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/allAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"allAdmin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "allAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/allAdmin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"allAdmin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "588"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24c-ZWrCP0c18OaL09Vvsey7i0RpmRo\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 04:42:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"All Admin Data Success\",\n    \"status\": 200,\n    \"data\": [\n        {\n            \"_id\": \"68edeb9f0459651252621624\",\n            \"name\": \"a\",\n            \"email\": \"a@gmail.com\",\n            \"gender\": \"Female\",\n            \"role\": \"Admin\",\n            \"profile\": \"/uploads/profile-1760422814993.png\",\n            \"contactNo\": 1234567890,\n            \"isDelete\": false,\n            \"createdAt\": \"2025-10-14T06:20:15.192Z\",\n            \"updatedAt\": \"2025-10-14T06:20:15.192Z\"\n        },\n        {\n            \"_id\": \"68ef1fe8edf887a7facf9ba0\",\n            \"name\": \"c\",\n            \"email\": \"c@gmail.com\",\n            \"gender\": \"Male\",\n            \"role\": \"Admin\",\n            \"profile\": \"/uploads/profile-1760501736193.jpg\",\n            \"contactNo\": 1234567890,\n            \"isDelete\": false,\n            \"createdAt\": \"2025-10-15T04:15:36.308Z\",\n            \"updatedAt\": \"2025-10-15T04:15:36.308Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "addManager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "jenny",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jenny@test.in",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Female",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Manager",
+									"type": "text"
+								},
+								{
+									"key": "contactNo",
+									"value": "1234567890",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/71b7+xqChiL._SY741_.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/addManager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"addManager"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addManager",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "jenny",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "jenny@test.in",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Female",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Manager",
+											"type": "text"
+										},
+										{
+											"key": "contactNo",
+											"value": "1234567890",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/71b7+xqChiL._SY741_.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/addManager",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"addManager"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2e-xn29FESJBcs4TMfgbxI2XdN2P1Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 05:49:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Manager Add Success\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "allManager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/admin/allManager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"allManager"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "allManager",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/admin/allManager",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"allManager"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "615"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"267-wNxasNuknlgHgomfL9mNMvrtg2A\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 06:09:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"All Manager Success\",\n    \"status\": 200,\n    \"data\": [\n        {\n            \"_id\": \"68ef35a71f8b3c6631ccfb77\",\n            \"name\": \"john\",\n            \"email\": \"john@test.in\",\n            \"gender\": \"Male\",\n            \"role\": \"Manager\",\n            \"profile\": \"/uploads/Manager-profile-1760507302717.png\",\n            \"contactNo\": 1234567890,\n            \"isDelete\": false,\n            \"createdAt\": \"2025-10-15T05:48:23.008Z\",\n            \"updatedAt\": \"2025-10-15T05:48:23.008Z\"\n        },\n        {\n            \"_id\": \"68ef35f1eec0b6844b9b0ae2\",\n            \"name\": \"jenny\",\n            \"email\": \"jenny@test.in\",\n            \"gender\": \"Female\",\n            \"role\": \"Manager\",\n            \"profile\": \"/uploads/Manager-profile-1760507376946.jpg\",\n            \"contactNo\": 1234567890,\n            \"isDelete\": false,\n            \"createdAt\": \"2025-10-15T05:49:37.233Z\",\n            \"updatedAt\": \"2025-10-15T05:49:37.233Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "editManager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "a",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/51WGMtqv3+L._AC._SR180,230.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/admin/editManager?id=68ef35f1eec0b6844b9b0ae2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"editManager"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68ef35f1eec0b6844b9b0ae2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editManager",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "a",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "a@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/51WGMtqv3+L._AC._SR180,230.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/admin/editManager?id=68ef35f1eec0b6844b9b0ae2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"editManager"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68ef35f1eec0b6844b9b0ae2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "396"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18c-cCYntzZiAYgbEFsUeTt02yGekvw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 08:09:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Edit Manager Success\",\n    \"status\": 200,\n    \"data\": {\n        \"_id\": \"68ef35f1eec0b6844b9b0ae2\",\n        \"name\": \"a\",\n        \"email\": \"a@gmail.com\",\n        \"password\": \"$2b$12$Aq1lWsy.UIJAQzZ8csVKoeJ5EHl5VGS6n3Y6TJlAO9RMIES.ISHmO\",\n        \"gender\": \"Female\",\n        \"role\": \"Manager\",\n        \"profile\": \"/uploads/profile-1760515778096.jpg\",\n        \"contactNo\": 1234567890,\n        \"isDelete\": false,\n        \"createdAt\": \"2025-10-15T05:49:37.233Z\",\n        \"updatedAt\": \"2025-10-15T08:09:38.130Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteManager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/admin/deleteManager?id=68ef35a71f8b3c6631ccfb77",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"deleteManager"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68ef35a71f8b3c6631ccfb77"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteManager",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/admin/deleteManager?id=68ef35a71f8b3c6631ccfb77",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"deleteManager"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68ef35a71f8b3c6631ccfb77"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-amTqe3jo/5HxHCSZGadtNrP6t9k\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Oct 2025 08:28:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Delete Manager Success\",\n    \"status\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "singleManager",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/admin/singleManager?id=68f09f63e9d3e81d25933189",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"admin",
+								"singleManager"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68f09f63e9d3e81d25933189"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "singleManager",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVkZjkxOGFkY2ZiZWNjM2I5N2M5ODQiLCJpYXQiOjE3NjA1MDIwMDR9.4wATcNty9IWLwCufzUx5KhzbeAYSdZy6RYwvSNKchM4",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/admin/singleManager?id=68f09f63e9d3e81d25933189",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"admin",
+										"singleManager"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68f09f63e9d3e81d25933189"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "288"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"120-xE10mahJkNbAFU4YFMnhCHEDt3w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Oct 2025 07:37:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Single manager Data Fetched Successfully\",\n    \"data\": {\n        \"_id\": \"68f09f63e9d3e81d25933189\",\n        \"name\": \"jenny\",\n        \"email\": \"jenny@test.in\",\n        \"gender\": \"Female\",\n        \"role\": \"Manager\",\n        \"contactNo\": 1234567890,\n        \"isDelete\": false,\n        \"createdAt\": \"2025-10-16T07:31:47.169Z\",\n        \"updatedAt\": \"2025-10-16T07:31:47.169Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "loginManager",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "bob@test.in",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/manager/loginManager",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"manager",
+								"loginManager"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginManager",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "bob@test.in",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/manager/loginManager",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"manager",
+										"loginManager"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "203"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cb-wye8UTAg6i3W85YBse4kVsy0hYI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Oct 2025 12:12:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login Manager Successfully\",\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA2MTY3Mjd9.RP__5pCt971-i-WaKHAhhyTljER7yyv9ppt48ZJIYbE\"\n}"
+						}
+					]
+				},
+				{
+					"name": "addEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA2NzI1NDl9.6Ow7I5B9z8hUHWiMwj4ia9kxhxWvpuMcLKA6UgcoUIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA2NzI1NDl9.6Ow7I5B9z8hUHWiMwj4ia9kxhxWvpuMcLKA6UgcoUIs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ravi Vora",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "voravi123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Employee",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/CHOTA BHEEM VECTOR CARTOON.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/manager/addEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"manager",
+								"addEmployee"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addEmployee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA2NzI1NDl9.6Ow7I5B9z8hUHWiMwj4ia9kxhxWvpuMcLKA6UgcoUIs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Ravi Vora",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "voravi123@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Employee",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/CHOTA BHEEM VECTOR CARTOON.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/manager/addEmployee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"manager",
+										"addEmployee"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24-nItYNjxDb+PScGDE3ngdVuZuhdc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Oct 2025 03:50:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Employee Login Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "changeManagerPassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA2NzI1NDl9.6Ow7I5B9z8hUHWiMwj4ia9kxhxWvpuMcLKA6UgcoUIs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Password",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cPassword",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/manager/changeManagerPassword?id=68f0db70770df6176af048b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"manager",
+								"changeManagerPassword"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68f0db70770df6176af048b2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "changeManagerPassword",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Password",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "cPassword",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/manager/changeManagerPassword?id=68f0db70770df6176af048b2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"manager",
+										"changeManagerPassword"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68f0db70770df6176af048b2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-hgGn1CHTBKBMU9kTEDMOOTDUwJE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Oct 2025 04:23:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Password Change Successfully \"\n}"
+						}
+					]
+				},
+				{
+					"name": "editEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "rahul",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/SANJANA/OneDrive/Pictures/Screenshots/Screenshot (242).png"
+								},
+								{
+									"key": "email",
+									"value": "r@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/manager/editEmployee?id=68f1bd0094a095296897023e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"manager",
+								"editEmployee"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68f1bd0094a095296897023e"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editManager",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "rahul",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/SANJANA/OneDrive/Pictures/Screenshots/Screenshot (242).png"
+										},
+										{
+											"key": "email",
+											"value": "r@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/manager/editManager?id=68f1bd0094a095296897023e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"manager",
+										"editManager"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68f1bd0094a095296897023e"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-CwUAVg39I+1A1gbRfHbv8TwQ+XA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 04:55:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Employee Edit Success\",\n    \"data\": {\n        \"_id\": \"68f1bd0094a095296897023e\",\n        \"name\": \"rahul\",\n        \"email\": \"r@gmail.com\",\n        \"gender\": \"Male\",\n        \"role\": \"Employee\",\n        \"profile\": \"/uploads/profile-1760849736695.png\",\n        \"isDelete\": false,\n        \"createdAt\": \"2025-10-17T03:50:24.020Z\",\n        \"updatedAt\": \"2025-10-19T04:55:36.745Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "allEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/manager/allEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"manager",
+								"allEmployee"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "allEmployee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/manager/allEmployee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"manager",
+										"allEmployee"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "546"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"222-QAWaMoDWulwu3YeM4HZDPpy3HF8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 05:02:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"All Employee Fetch Success\",\n    \"data\": [\n        {\n            \"_id\": \"68f0ee08aaad5eaddb04e4bd\",\n            \"name\": \"mahesh\",\n            \"email\": \"m@gmail.com\",\n            \"gender\": \"Male\",\n            \"role\": \"Employee\",\n            \"profile\": \"/uploads/profile-1760620035284.jpg\",\n            \"isDelete\": false,\n            \"createdAt\": \"2025-10-16T13:07:20.026Z\",\n            \"updatedAt\": \"2025-10-16T13:07:20.026Z\"\n        },\n        {\n            \"_id\": \"68f1bd0094a095296897023e\",\n            \"name\": \"rahul\",\n            \"email\": \"r@gmail.com\",\n            \"gender\": \"Male\",\n            \"role\": \"Employee\",\n            \"profile\": \"/uploads/profile-1760849736695.png\",\n            \"isDelete\": false,\n            \"createdAt\": \"2025-10-17T03:50:24.020Z\",\n            \"updatedAt\": \"2025-10-19T04:55:36.745Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/manager/deleteEmployee?id=68f0ee08aaad5eaddb04e4bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"manager",
+								"deleteEmployee"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68f0ee08aaad5eaddb04e4bd"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteEmployee",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYwZDg3NGM0Y2U4N2EwODA3MTU0YTQiLCJpYXQiOjE3NjA4NDkwNjZ9.-LSpiJyOfsUuFwqTBvFQtdOi-PMBnzhy-9tEEpTkryk",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/manager/deleteEmployee?id=68f0ee08aaad5eaddb04e4bd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"manager",
+										"deleteEmployee"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68f0ee08aaad5eaddb04e4bd"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-C2BnM4pMAEMPw2zH0gsLUBBTJss\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 05:14:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Employee Delete Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "loginEmployee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "r@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/employee/loginEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"employee",
+								"loginEmployee"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginEmployee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "r@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/employee/loginEmployee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"employee",
+										"loginEmployee"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "199"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c7-HiS+qMZaGhxgxJaG6HjW7jF7lHg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 05:30:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login Employee Success\",\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYxYmQwMDk0YTA5NTI5Njg5NzAyM2UiLCJpYXQiOjE3NjA4NTE4Mzl9.0-JReaJG_WQO6xbEqbY5Cto9lkjGGeAR1GHoRhaIldQ\"\n}"
+						}
+					]
+				},
+				{
+					"name": "changeEmployeePassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYxYmQwMDk0YTA5NTI5Njg5NzAyM2UiLCJpYXQiOjE3NjA4NTE4Mzl9.0-JReaJG_WQO6xbEqbY5Cto9lkjGGeAR1GHoRhaIldQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYxYmQwMDk0YTA5NTI5Njg5NzAyM2UiLCJpYXQiOjE3NjA4NTE4Mzl9.0-JReaJG_WQO6xbEqbY5Cto9lkjGGeAR1GHoRhaIldQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cPassword",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/employee/changeEmployeePassword?id=68f1bd0094a095296897023e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"employee",
+								"changeEmployeePassword"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "68f1bd0094a095296897023e"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "changeEmployeePassword",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYxYmQwMDk0YTA5NTI5Njg5NzAyM2UiLCJpYXQiOjE3NjA4NTE4Mzl9.0-JReaJG_WQO6xbEqbY5Cto9lkjGGeAR1GHoRhaIldQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "cPassword",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/employee/changeEmployeePassword?id=68f1bd0094a095296897023e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"employee",
+										"changeEmployeePassword"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "68f1bd0094a095296897023e"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-K4+qaXmpvknevJ8XBzRuAJ5TvGA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Oct 2025 06:02:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Password Change Success\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
