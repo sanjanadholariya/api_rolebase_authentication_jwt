@@ -38,8 +38,7 @@ project-folder/
  │   ├─ controller/
  │   ├─ middleware/
  │   ├─ model/
- │   ├─ routes/
- │   └─ utils/
+ │   └─ routes/
  ├─ .env
  └─ package.json
  
